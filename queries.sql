@@ -32,3 +32,11 @@ INTO retirement_info
 FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 	AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31')
+
+-- Employee count by department number
+SELECT de.dept_no, COUNT(ce.emp_no)
+FROM current_emp ce
+LEFT JOIN dept_emp de
+	ON de.emp_no = ce.emp_no
+GROUP BY de.dept_no
+ORDER BY de.dept_no
