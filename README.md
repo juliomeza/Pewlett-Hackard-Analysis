@@ -16,6 +16,7 @@ The purpose of the analysis is to determine the number of retiring employees per
 - We will need to fullfill 72,458 roles as the "silver tsunami" begins to make an impact.
 - There are not enough employees in the departments to mentor the next generation of Pewlett Hackard employees
 - After running the 2 additional queries, I have copied the query results into a table to ilustrate the ratio between current, retiring and mentorship employees.
+
 Query 1: Total Number of Current Employees per Title
 <img src="https://github.com/juliomeza/Pewlett-Hackard-Analysis/blob/main/img/Retiring.png">
 
