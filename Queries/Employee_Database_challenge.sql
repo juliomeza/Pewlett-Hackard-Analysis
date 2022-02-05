@@ -1,4 +1,5 @@
--- DELIVERABLE 1
+-- DELIVERABLE 1 --
+-------------------
 -- Employees
 select emp_no, first_name, last_name, birth_date
 from employees
@@ -30,4 +31,41 @@ INTO retiring_titles
 FROM unique_titles
 GROUP BY title
 ORDER BY count DESC
+
+
+-- DELIVERABLE 2 --
+-------------------
+
+-- Employees
+SELECT emp_no, first_name, last_name, birth_date
+FROM employees
+
+-- Department Employee
+SELECT from_date, to_date
+FROM dept_emp
+
+-- Title
+SELECT title
+FROM titles
+
+-- Join Tables
+SELECT DISTINCT ON	(e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date,
+					de.from_date, de.to_date,
+					t.title
+INTO mentorship_eligibilty
+FROM employees e
+	JOIN dept_emp de ON de.emp_no = e.emp_no
+	JOIN titles t ON t.emp_no = e.emp_no
+WHERE	t.to_date = '9999-01-01'
+		AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no, t.from_date DESC
+
+
+
+
+
+
+
+
+
 
