@@ -5,9 +5,11 @@ The purpose of the analysis is to determine the number of retiring employees per
 
 ## Results
 ### Retiring Employees by Title
-- test
+- Around 30 percent of the total current employees are retiring soon.
+- The same 30 percent are retiring per title with the exception of 'Manager', where only 22 percent are retiring.
 
 ### Employees Eligible for the Mentorship Program
-
+- There are only 1549 employees eligible for the mentorship program
+- Less than 2 percent of the retiring employees can be filled with the mentorship program
 
 ## Summary
